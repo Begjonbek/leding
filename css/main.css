@@ -771,6 +771,7 @@ hr{
     color: #ED1C24;
     transition: 0.3s;
 }
+
 .categories-cart{
     margin: 0 auto;
 }
@@ -945,8 +946,6 @@ hr{
 }
 
 .support-menu {
-    padding-left: 12%;
-    padding-right: 12%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -988,14 +987,28 @@ hr{
 }
 
 .useful-item {
-    max-width: 575px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px 40px;
-    display:flex;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-areas: " blog-1 blog-2 blog-2 blog-3 blog-3";
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+}
+
+.blog-1{
+    grid-area: blog-1;
+}
+
+.blog-2{
+    grid-area: blog-2;
+}
+
+.blog-3{
+    grid-area: blog-3;
 }
 
 .useful-title{
@@ -1004,7 +1017,8 @@ hr{
 }
 
 .useful-svg {
-    width: 7%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .useful-paragrf {
@@ -1029,14 +1043,6 @@ hr{
 /* ------------------   RESPONSIVE  -------------*/
 
 @media  ( max-width:1200px){
-
-    .useful-list{
-        grid-template-columns: 1fr;
-    }
-
-    .useful-item{
-        margin: 0 auto;
-    }
 
     .hero-title{
         font-size: 48px;
@@ -1202,8 +1208,10 @@ hr{
     }
 
     .categories-menu{
-        grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 20px;
+    }
+    .categories-list_2{
+        display: none;
     }
 
     .categories-cart-item{
@@ -1211,9 +1219,20 @@ hr{
         margin-right: 20%;
     }
 
+    .useful-item{
+        grid-template-areas: "blog-1 blog-1 blog-2 blog-2 blog-3 blog-3";
+    }
+
+    .useful-svg{
+        width: 30%;
+    }
+
 }
 
 @media  ( max-width:992px){
+    .useful-svg{
+        width: 20%;
+    }
 
     .header-container{
         grid-template-columns: 5fr 0fr;
@@ -1269,6 +1288,31 @@ hr{
 
    .before-menu {
         grid-template-columns: 1fr;
+    }
+
+    .form-1{
+        width: 100%;
+    }
+    
+    .useful-list{
+        grid-template-columns: 1fr;
+    }
+    
+
+    .useful-link{
+        text-align: center;
+    }
+
+    .useful-svg{
+        width: 20%;
+    }
+
+    .before-list-item{
+        margin: 0 auto;
+    }
+
+    .before-sumit{
+        margin: 0 auto;
     }
 
     .footer-item::after{
@@ -1335,13 +1379,45 @@ hr{
         margin: 0 auto;
     }
 
-    .categories-list_2{
-        display: none;
+    .categories-title-1{
+        font-size: 16px ;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .useful-item{
+        grid-template-areas: " blog-1 blog-2 blog-2 blog-3 blog-3";
+    }
+
+    .useful-svg{
+        width: 100%;
     }
     
 }
 
 @media  ( max-width:650px){
+
+    .Support{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .support-paragrf{
+        margin-bottom: 30px;
+    }
+
+    .useful{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .useful-title{
+        margin-bottom: 30px;
+    }
+
+    .useful-item{
+        grid-template-areas: "blog-1 blog-2 blog-2 blog-2 blog-3 blog-3";
+    }
 
     .hero-container{
         padding: 20px 40px;
@@ -1444,18 +1520,50 @@ hr{
     .branches-paragrf{
         margin-bottom: 30px;
     }
+
+    .categories-menu-item{
+        padding: 20px 16px ;
+    }
+    
+    .categories-link-1{
+        font-size: 12px;
+    }
+
+    .categories-paragrf{
+        font-size: 14px;
+    }
+    
+    .useful-svg{
+        width: 50%;
+    }
+
+    .useful-item{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
       
 }
 @media  ( max-width:576px){
 
-    .useful-item{
-        flex-wrap: wrap;
-        
+    .support-menu {
+        gap: 10px;
+    }
+
+    .before-div{
+        margin-bottom: 30x;
     }
 
     .useful-link{
         padding: 12px 80px;
     }
+
+    .before-menu{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+ 
 
     .support-paragrf-1 {
         font-size: 14px;
@@ -1536,6 +1644,7 @@ hr{
     .plans-menu-img{
         height: 90%;
    }
+
    .benefits-item{
         max-width:200px ;
         padding: 40px 10px 25px;
@@ -1553,9 +1662,64 @@ hr{
         font-size: 32px;
         line-height: 38px;
     }
+
+    .useful{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .useful-item{
+        grid-template-areas: " blog-1 blog-1 blog-2 blog-2 "
+         ". blog-3 blog-3 .";
+         row-gap: 20px;
+        text-align: center;
+    }
+    
+    .useful-title{
+        margin-bottom: 30px;
+    }
+
+    .useful-link{
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 8px 40px;
+    }
+    .useful-svg{
+        width: 50px;
+        
+    }
+    .categories-container{
+        padding-bottom:30px ;
+    }
+
+    .categories-menu{
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .categories-title-1{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .categories-paragrf{
+        font-size: 8px;
+    }
+
+    .categories-link-1{
+        font-size: 8px;
+    }
 }
 
 @media  ( max-width:476px){
+
+    .useful-svg{
+        width: 10%;
+        
+    }
+    .useful-link{
+        padding: 5px 70px;
+    }
 
     .header-container{
         padding-top: 5px;
@@ -1680,19 +1844,20 @@ hr{
     }
     
     .categories-menu-item{
-        padding: 20px 10px ;
-    }
-    
-    .categories-title-1{
-        font-size: 16px;
+        padding: 10px 8px ;
     }
     
     .categories-paragrf{
-        font-size: 12px;
+        font-size: 8px;
     }
-    
+
+    .categories-title-1{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
     .categories-link-1{
-        font-size: 12px;
+        font-size: 8px;
     }
     
     .categories-cart-item{
@@ -1702,6 +1867,30 @@ hr{
 
     .other-cart{
         gap: 20px;
+    }
+
+    .useful-item{
+        grid-template-areas: " blog-1 blog-1  "
+        "blog-2 blog-2 "
+        "blog-3 blog-3 ";
+    }
+    
+    .categories-menu{
+        margin-bottom: 20px;
+    }
+
+    .categories-cart-item{
+        margin: 0 auto;
+        max-width: 194px;
+        gap: 10px;
+    }
+
+    .branches-cart-svg{
+        width: 15px;
+    }
+
+    .categories-link{
+        font-size: 14px;
     }
     
 }
