@@ -1585,7 +1585,9 @@ hr{
         margin-bottom: 20px;
     }
     
- 
+    .branches-cart_1{
+        gap: 15px;
+    }
 
     .support-paragrf-1 {
         font-size: 14px;
@@ -1848,7 +1850,7 @@ hr{
     }
     
     .branches-cart_1{
-        row-gap: 20px;
+        gap: 10px;
     }
     
     .branches-number-1{
@@ -1946,6 +1948,9 @@ hr{
 }
 
 @media  ( max-width:375px){
+    .branches-cart_1{
+        gap: 7px;
+    }
 
     .useful-item{
         text-align: center;
