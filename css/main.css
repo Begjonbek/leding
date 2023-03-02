@@ -499,16 +499,17 @@ h2{
     font-weight: 700;
     line-height: 25px;
     color: #FFFFFF;
+    align-items: center;
     text-decoration: none;
-    padding: 15px 63px;
     background-color: #ED1C24;
     border-radius: 50px;
+    padding: 8px 35px;
     gap: 8px;
 }
 
 .branches-numer-svg-1{
     margin-left: 5px;
-    width: 15%;
+    width: 10%;
 }
 
 .other {
@@ -1072,6 +1073,13 @@ hr{
     .categories-container{
         gap: 5px;
     }
+    .branches-cart{
+        margin-bottom: 100px;
+    }
+    .branches-cart-menu{
+       height: auto;
+
+    }
 
 }
 
@@ -1165,17 +1173,13 @@ hr{
     }
    
     .branches-cart_1{
-        grid-template-columns: 1fr ;
+        gap: 30px;
     }
 
-    .branches-number-1{
-        margin-left: 17%;
-        margin-right: 17%;
-    }
 
     .branches-cart{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4 ,1fr);
+        margin-bottom: 100px;
+        gap: 30px;
     }
 
     .branches-cart-menu{
@@ -1233,6 +1237,7 @@ hr{
     .useful-svg{
         width: 20%;
     }
+
 
     .header-container{
         grid-template-columns: 5fr 0fr;
@@ -1318,6 +1323,13 @@ hr{
     .footer-item::after{
         content: none;
     }
+    .branches-cart-list{
+        padding: 30px 25px;
+    }
+    .branches-number-1{
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 @media  ( max-width:768px){
@@ -1392,7 +1404,23 @@ hr{
     .useful-svg{
         width: 100%;
     }
-    
+    .branches-cart-item{
+        margin-bottom: 15px;
+    }
+    .branches-cart-title{
+        margin-bottom:15px ;
+    }
+    .branches-time{
+        font-size: 14px;
+    }
+    .branches-number{
+        font-size: 14px;
+    }
+    .branches-number-1{
+        font-size: 14px;
+        line-height: 16px;
+    }
+  
 }
 
 @media  ( max-width:650px){
@@ -1485,9 +1513,7 @@ hr{
         margin-bottom: 40px;
     }
 
-    .branches-number-1{
-        margin-left: 10%;
-    }
+  
 
     .borrow-link{
         margin-left: 23%;
@@ -1511,10 +1537,6 @@ hr{
     .item-2{
             margin: 0 auto;
             width: 272px;
-    }
-
-    .branches-cart-menu{
-            max-width: 500px;
     }
 
     .branches-paragrf{
@@ -1654,9 +1676,7 @@ hr{
         margin-bottom: 20px;
    }
 
-   .branches-cart-menu{
-        max-width: 430px;
-    }
+   
 
     .borrow-title {
         font-size: 32px;
@@ -1708,6 +1728,27 @@ hr{
 
     .categories-link-1{
         font-size: 8px;
+    }
+    .branches-cart-title{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .branches-time{
+        font-size: 12px;
+    }
+    .branches-cart-svg{
+        width: 7%;
+    }
+    .branches-number-1{
+        font-size: 10px;
+        line-height: 12px;
+        padding: 4px 15px;
+    }
+    .branches-cart-item{
+        margin-bottom: 8px;
+    }
+    .branches-cart-list{
+        padding: 10px 15px;
     }
 }
 
@@ -1799,9 +1840,7 @@ hr{
         margin-right: 8%;
     }
    
-   .branches-cart-menu{
-        max-width: 340px;
-    }
+  
     
     .branches-cart{
         row-gap: 20px;
@@ -1813,16 +1852,22 @@ hr{
     }
     
     .branches-number-1{
-        padding: 6px 63px;
-        font-size: 12px;
+        font-size: 10px ;
+        padding: 5px 10px;
     }
+    .branches-number{
+        font-size: 10px ;
+        line-height: 12px;
+    }
+    
     
     .branches-cart-svg {
         width: 6%;
     }
     
     .branches-time{
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 12px;
     }
     
     h3{
@@ -1886,11 +1931,16 @@ hr{
     }
 
     .branches-cart-svg{
-        width: 15px;
+        width: 7%;
     }
 
     .categories-link{
         font-size: 14px;
+    }
+    .branches-cart-title{
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 4px;
     }
     
 }
@@ -1921,10 +1971,9 @@ hr{
     }
 
     .branches-number-1{
-        padding: 6px 43px;
-        font-size: 12px;
-        align-items: center;
-        margin-left: 5px;
+        font-size: 8px;
+        line-height: 10px;
+
     }
    
     .categories-cart-item{
