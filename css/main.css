@@ -1584,6 +1584,9 @@ hr{
         gap: 10px;
         margin-bottom: 20px;
     }
+    .branches-cart{
+        gap: 15px;
+    }
     
     .branches-cart_1{
         gap: 15px;
@@ -1845,8 +1848,8 @@ hr{
   
     
     .branches-cart{
-        row-gap: 20px;
-        margin-bottom: 30px;
+        gap: 10px;
+        margin-bottom: 25px;
     }
     
     .branches-cart_1{
@@ -1948,6 +1951,12 @@ hr{
 }
 
 @media  ( max-width:375px){
+
+    .branches-cart{
+        gap: 7px;
+        margin-bottom: 15px;
+    }
+
     .branches-cart_1{
         gap: 7px;
     }
